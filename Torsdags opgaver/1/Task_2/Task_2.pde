@@ -37,7 +37,6 @@ public void setup(){
 
 public void draw(){
   
-  
    // Testing the variables  
    println(times);  
    println(daysInAYear);  
