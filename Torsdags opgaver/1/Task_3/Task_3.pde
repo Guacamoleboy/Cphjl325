@@ -12,8 +12,6 @@ String messageForUser = "Hi there.. This is a message for you - and only you!";
 int frames = 60; // default value but I like declaring it
 color backgroundColor, black, white;
 
-// Testing the variables
-
 public void setup(){
    
    // Adding colors
@@ -31,6 +29,7 @@ public void setup(){
 
 public void draw(){
   
+  // Testing the variables
   println(address);
   println(twoNumbers);
   println(division);

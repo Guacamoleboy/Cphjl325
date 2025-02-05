@@ -20,16 +20,7 @@ String textPlusName = "Hej, jeg hedder "+teacherName;
 int frames = 60; // default value but I like declaring it
 color backgroundColor, black, white;
 
-// Testing the variables
-
 public void setup(){
-
-   println(times);  
-   println(daysInAYear);  
-   println(decimalTwo); 
-   println(s);  
-   println(textPlusName);
-   println(something2);
    
    // Adding colors
    backgroundColor = color(115, 147, 179);
@@ -40,11 +31,19 @@ public void setup(){
    size(900, 600);
    background(backgroundColor);
    frameRate(frames);
+   noLoop();
 
 }
 
 public void draw(){
   
   
+   // Testing the variables  
+   println(times);  
+   println(daysInAYear);  
+   println(decimalTwo); 
+   println(s);  
+   println(textPlusName);
+   println(something2);
 
 }
