@@ -30,6 +30,7 @@ void setup(){
    ellipseMode(CORNER);
   
 }
+
 void draw(){
  
    x = circleSize*counter;
