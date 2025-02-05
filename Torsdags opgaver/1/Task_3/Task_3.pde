@@ -5,31 +5,16 @@
 
 */
 
-// Skriv den rette datatype og et passende variabelnavn foran denne værdi: String teacherName= "Tess Løvgreen"
-
-String teacherName = "Tess Løvgreen";
-int daysInAYear = 365;
-String capitalCityOfDenmark = "København";
-boolean something1 = true;
-int times = 60*24;
-double decimal = 22.12;
-boolean something2 = false;
-double decimalTwo = 2.2 + 33;
-char s = 'S';
-String textPlusName = "Hej, jeg hedder "+teacherName;
+String address = "Hillerød";
+int twoNumbers = 10+10;
+int division = 8/2;
+String messageForUser = "Hi there.. This is a message for you - and only you!";
 int frames = 60; // default value but I like declaring it
 color backgroundColor, black, white;
 
 // Testing the variables
 
 public void setup(){
-
-   println(times);  
-   println(daysInAYear);  
-   println(decimalTwo); 
-   println(s);  
-   println(textPlusName);
-   println(something2);
    
    // Adding colors
    backgroundColor = color(115, 147, 179);
@@ -40,11 +25,15 @@ public void setup(){
    size(900, 600);
    background(backgroundColor);
    frameRate(frames);
+   noLoop();
 
 }
 
 public void draw(){
   
-  
+  println(address);
+  println(twoNumbers);
+  println(division);
+  println(messageForUser);
 
 }
