@@ -8,6 +8,10 @@
 public static color backgroundColor, orange, green, black, white;
 public static int screenWidth = 900;
 public static int screenHeight = 600;
+public static boolean lightOn = false;
+public static boolean lightOff = false;
+public static boolean keyFail = false;
+public static PFont font;
 
 public void setup(){
 
@@ -20,30 +24,52 @@ public void setup(){
   
   // Screen display
   size(900, 600);
-  background(orange);
+  background(backgroundColor);
+  
+  // Fonts
+  font = createFont("Wonderly.otf", 40);
+  textFont(font);
 
 }
 
 public void draw(){
+ 
+  
+    background(black);
+    textAlign(CENTER, CENTER);
+    text("T = Turn on lights!\nO = Turn off lights!", screenWidth/2, screenHeight/2);
+  
+  if(lightOn == true && lightOff == false && keyFail == false){
+  
+    background(white);
+    fill(orange);
+    ellipseMode(CENTER); // Default. I like setting default values.
+    ellipse(screenWidth/2, screenHeight/2, 100, 100);
+  
+  } 
+  
+  if(lightOff == true && lightOn == false){
+  
+    background(black);
+  
+  }
   
 }
 
 public void keyPressed(){
-
-  if(key == 'w'){
   
-    background(orange);
-    fill(black);
-    rectMode(CENTER);
-    rect(screenWidth/2, screenHeight/2, 200, 200);
-    
-  } else {
+  if(key == 't'){
   
-    background(green);
-    fill(black);
-    ellipseMode(CENTER);
-    ellipse(screenWidth/2, screenHeight/2, 200, 200);
+    lightOn = true;
+    lightOff = false;
   
-  }
+  } 
+  
+  if(key == 'o'){
+  
+    lightOff = true;
+    lightOn = false;
+  
+  } 
 
 }
