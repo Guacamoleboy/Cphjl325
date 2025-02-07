@@ -45,12 +45,19 @@ public void draw(){
     fill(orange);
     ellipseMode(CENTER); // Default. I like setting default values.
     ellipse(screenWidth/2, screenHeight/2, 100, 100);
+    
+    textAlign(CENTER);
+    fill(black);
+    text("Lights are on!", screenWidth/2, screenHeight/3);
   
   } 
   
   if(lightOff == true && lightOn == false){
   
     background(black);
+    textAlign(CENTER);
+    fill(white);
+    text("Lights are off (zzZZZzz)", screenWidth/2, screenHeight/3);
   
   }
   
