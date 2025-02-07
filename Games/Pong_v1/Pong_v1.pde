@@ -26,8 +26,8 @@ public static int pongHeight = 110;
 public static int ballX = screenWidth/2;
 public static int ballY = screenHeight/2;
 public static int fmrate = 60;
-public static int ballSpeedX = 4;
-public static int ballSpeedY = 4;
+public static int ballSpeedX = 10;
+public static int ballSpeedY = 10;
 public static color backgroundColor, black, white, orange, textColor, gameBorder, whiteOpacity;
 public static boolean border = true;
 public static boolean startScreen = true;
@@ -131,25 +131,25 @@ public void draw(){
      
      if (keyPressed == true && key == 'w'){
          
-           pongLeftStartY = pongLeftStartY-5;
+           pongLeftStartY = pongLeftStartY-15;
          
      }
      
      if (keyPressed == true && keyCode == UP){
          
-           pongRightStartY = pongRightStartY-5;
+           pongRightStartY = pongRightStartY-15;
          
      }
      
      if (keyPressed == true && keyCode == DOWN){
          
-           pongRightStartY = pongRightStartY+5;
+           pongRightStartY = pongRightStartY+15;
          
      }
      
      if (keyPressed == true && key == 's'){
          
-           pongLeftStartY = pongLeftStartY+5;
+           pongLeftStartY = pongLeftStartY+15;
        
      }
      
@@ -254,7 +254,7 @@ public void mousePressed(){
 public void keyPressed(){
 
   startScreen = false;
-  println("User has pressed: " + key);
+  //println("User has pressed: " + key);
   changeScene = true;
   
 }
