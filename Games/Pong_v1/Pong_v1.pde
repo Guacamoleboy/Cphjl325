@@ -25,7 +25,7 @@ public static int pongWidth = 20;
 public static int pongHeight = 110;
 public static int ballX = screenWidth/2;
 public static int ballY = screenHeight/2;
-public static int fmrate = 60;
+public static int fmrate = 60; // default
 public static int ballSpeedX = 10;
 public static int ballSpeedY = 10;
 public static color backgroundColor, black, white, orange, textColor, gameBorder, whiteOpacity;
