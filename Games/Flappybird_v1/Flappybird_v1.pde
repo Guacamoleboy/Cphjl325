@@ -225,7 +225,7 @@ public void keyPressed(){
         gameState = 0;
         startBird = true;
         gameOn = true;
-        velocityY = -16; // Velocity gain per mouse press.
+        velocityY = -16; // Velocity gain per space press.
      
        }
 
