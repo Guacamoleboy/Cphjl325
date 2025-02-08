@@ -25,7 +25,7 @@ public static int gameState = 0;
 public static int birdBottom = -50; // Collision for the bird
 public static int birdY = screenHeight/2; // Sets the birdY start value to CENTER
 public static int velocityY = 1; // Velocity on Y axis. Used for the BIRD.
-public PImage backgroundImage, entryImage, birdImage, wallTopImage, wallBottomImage; // Loading the images. Setting the values in setup();
+public static PImage backgroundImage, entryImage, birdImage, wallTopImage, wallBottomImage; // Loading the images. Setting the values in setup();
 public static color backgroundColor, black, blackOpacity, white, whiteOpacity, textColor, gameBorder; // Loading the colors. Setting the values in setup();
 public static boolean startBird = true;
 public static boolean failBird = false;
