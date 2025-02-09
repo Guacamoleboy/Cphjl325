@@ -281,7 +281,7 @@ public void pipeSetup(){ // Spawns pipes after a given array.
          for(int i = 0; i < topPipeStartX.length; i++){
      
          image(topPipe, topPipeStartX[i], topPipeStartY[i]);
-         image(bottomPipe, bottomPipeStartX[i], (bottomPipeStartY[i] + 700)); // margin / collision hole (+700)
+         image(bottomPipe, bottomPipeStartX[i], (topPipeStartY[i] + 700)); // margin / collision hole (+700)
          topPipeStartX[i] = topPipeStartX[i] - 3; // Animation top
          bottomPipeStartX[i] = topPipeStartX[i]; // Animation bottom. Same speed so equal to the other.
          
