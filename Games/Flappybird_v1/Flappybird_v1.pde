@@ -8,6 +8,7 @@
   
   1) Add rects with collision. Probably 2-3 rows of rects active at any given time.
   2) Add a game conquered screen! Hint: if counter > MAX_ALLOWED_COUNTER -> DO THIS
+  3) Make new calculation if pipe HOLE is <= some value
 
 */
 
