@@ -18,6 +18,7 @@ public static int backgroundY = 0; // background Y position. Used for animating 
 public static int bottomPipeY = 750;
 public static int topPipeY = -50;
 public static int pipeScreenAnim = 800;
+public static int pipeResetXValue = 800;
 public static int newPipeScreenAnim = 700;
 public static int lastPipeScreenAnim = 700;
 public static int borderX = 10;
@@ -43,6 +44,7 @@ public static String gameLoadMsg = "Flappybirds";
 public static String gameLoadMsgTwo = "Use spacebar or your mouse to play...";
 public static String versionOfGame = "Version 1.0 - By CPHJL325";
 public static PFont gameTextFont, gameTextFontTwo, pressToPlay, versionFont, startScreenFont, pressToPlayTwo; // Fonts!
+public static int[] topPipeStartX, topPipeStartY, bottomPipeStartX, bottomPipeStartY;
 
 public void setup(){
     
@@ -79,6 +81,24 @@ public void setup(){
      size(600, 800);
      background(backgroundImage);
      frameRate(frmrate); // Default
+     
+     // Pipe setup
+     topPipeStartX = new int[3];
+     topPipeStartY = new int[3];
+     bottomPipeStartX = new int[3];
+     bottomPipeStartY = new int[3];
+     
+     // X and Y pipe locations
+     for(int i = 0; i < topPipeStartX.length; i++){
+     
+       topPipeStartX[i] = (screenWidth + 100) + (300 * i);
+       topPipeStartY[i] = (int)random(-150, 300);
+       bottomPipeStartX[i] = (screenWidth + 100) + (300 * i);
+       bottomPipeStartY[i] = (int)random(-150, 300);
+       
+     }
+     
+     
   
 }
 
@@ -96,7 +116,7 @@ public void mousePressed(){
      gameState = 0;
      startBird = true;
      gameOn = true;
-     velocityY = -16; // Velocity gain per mouse press.
+     velocityY = -14; // Velocity gain per mouse press.
 
 }
 
@@ -160,6 +180,7 @@ public void birdExitBoundaries(){
 
 }
 
+
 public void gameActive(){
 
      if(gameState == 0 && startBird == true && gameOn == true){
@@ -193,7 +214,6 @@ public void gameActive(){
              backgroundX = 0;
            
            }
-   
      } 
      
      if(gameState == 1){ // If gameState = 1 do THIS. gamestate 1 is the game isn't active state.
@@ -255,30 +275,36 @@ public void birdImageLoad(){ // Does what you think it does
 
 }
 
-public void pipeSetup(){
-  
-       if(gameState == 0){ 
-       
-       image(topPipe, pipeScreenAnim, topPipeY);
-       image(bottomPipe, pipeScreenAnim, bottomPipeY);
-       
-       pipeScreenAnim = pipeScreenAnim -3;  
-       
-       }
-       
-       if(pipeScreenAnim < screenWidth/2 && gameState == 0){ 
+public void pipeSetup(){ // Spawns pipes after a given array.
+        
+         for(int i = 0; i < topPipeStartX.length; i++){
+     
+         image(topPipe, topPipeStartX[i], topPipeStartY[i]);
+         image(bottomPipe, bottomPipeStartX[i], (bottomPipeStartY[i] + 700)); // margin / collision hole (+700)
+         topPipeStartX[i] = topPipeStartX[i] - 3; // Animation top
+         bottomPipeStartX[i] = topPipeStartX[i]; // Animation bottom. Same speed so equal to the other.
          
-         newPipeScreenAnim = newPipeScreenAnim -3;
-         image(topPipe, newPipeScreenAnim, topPipeY);
-         image(bottomPipe, newPipeScreenAnim, bottomPipeY);
+         if(topPipeStartX[i] < -100){ // If pipe == gone from screen -> do THIS
        
-       }
-       
-       if(newPipeScreenAnim < screenWidth/2 && gameState == 0){ 
+         topPipeStartX[i] = (screenWidth + 200); // Off screen
+         bottomPipeStartX[i] = (screenWidth + 200); // Off screen
          
-         lastPipeScreenAnim = lastPipeScreenAnim -3;
-         image(topPipe, lastPipeScreenAnim, topPipeY);
-         image(bottomPipe, lastPipeScreenAnim, bottomPipeY);
+         }
+         
+         if(birdY <= birdBottom){ // Pipe reset | Bug: Adds 700+700+700 instead of = 700. Don't have time right now to fix it.
+         
+           topPipeStartX[i] = topPipeStartX[i] + 700;
+           bottomPipeStartX[i] = bottomPipeStartX[i]+ 700;
+         
+         }
+         
+         if(birdY >= (screenHeight+birdTop)){ // Pipe reset
+         
+           topPipeStartX[i] = topPipeStartX[i] + 700;
+           bottomPipeStartX[i] = bottomPipeStartX[i]+ 700;
+         
+         }
+        
        
        }
        
@@ -292,7 +318,7 @@ public void keyPressed(){
         gameState = 0;
         startBird = true;
         gameOn = true;
-        velocityY = -16; // Velocity gain per space press.
+        velocityY = -14; // Velocity gain per space press.
      
        }
 
