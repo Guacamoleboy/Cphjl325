@@ -10,7 +10,7 @@
 
 public static int days = 0;
 public static int febDays = 28;
-public static double currentYear = 2025;
+public static int currentYear = 2025;
 public static boolean leapYear = false;
 public static String month = "Febuary";
 public static color black, white, backColorLeap, backColorNotLeap;
