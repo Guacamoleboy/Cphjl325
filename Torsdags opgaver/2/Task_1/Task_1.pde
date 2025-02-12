@@ -122,14 +122,14 @@ public void switchCaseTask(){ // Task
      }
      
      // Prints the message.
-   if(month == "Febuary"){
+     if(month == "Febuary"){
+       
+       println("The month is: " + month + "." + "\nThere are " + febDays + " in this month!");
      
-     println("The month is: " + month + "." + "\nThere are " + febDays + " in this month!");
-   
-   } else {
-   
-     println("The month is: " + month + "." + "\nThere are " + days + " in this month!");
-   
-   }
+     } else {
+     
+       println("The month is: " + month + "." + "\nThere are " + days + " in this month!");
+     
+     }
 
 }
