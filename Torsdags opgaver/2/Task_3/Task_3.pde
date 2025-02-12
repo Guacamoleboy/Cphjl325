@@ -28,9 +28,9 @@ public void setup(){
   frameRate(60);
   
   // Method calling
-  task3A();
-  task3B();
-  task3C();
+  //task3A();
+  //task3B();
+  //task3C();
   
 }
   
