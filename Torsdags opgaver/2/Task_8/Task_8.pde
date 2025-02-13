@@ -30,7 +30,9 @@ while(min < max){
   ellipse(randomX, randomY, randomSize, randomSize);
   
   if(min >= max){
+    
     println("Max reached. Stopping ellipse spawning.");
+    
   }
   
 }
