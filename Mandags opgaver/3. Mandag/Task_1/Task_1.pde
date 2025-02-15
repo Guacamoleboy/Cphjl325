@@ -5,8 +5,6 @@
 
 */
 
-public static int startNumber = 0;
-public static int maxNumber = 30;
 public static color black, white;
 
 public void setup(){
@@ -20,7 +18,7 @@ public void setup(){
   background(black);
   
   // Method calling
-  printEven();
+  printEven(20); // Use the () to insert any values you'd like.
 
 }
 
@@ -30,15 +28,15 @@ public void draw(){
 
 }
 
-public void printEven(){
+public void printEven(int maxNumber){
   
-  
-  for(int i = -10; i < 21; i++){
-  
-    if(i < 0){
+  // Checks for negative numbers
+  if(maxNumber < 0){
     println("Negative value");
-    break;
     }
+  
+  // Function to calculate even numbers
+  for(int i = 0; i <= maxNumber; i++){
     
     int newI = i % 2;
     
