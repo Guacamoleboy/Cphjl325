@@ -19,11 +19,11 @@ Student myStudent2;
     
     if(sameTeam){
       
-      println(myStudent.name + " and " + myStudent2.name + " Are on the same team!");
+      println(myStudent.name + " and " + myStudent2.name + " are on the same team!");
       
     } else {
     
-      println(myStudent.name + " and " + myStudent2.name + " Are NOT the same team!");
+      println(myStudent.name + " and " + myStudent2.name + " are NOT the same team!");
       
     }
     
