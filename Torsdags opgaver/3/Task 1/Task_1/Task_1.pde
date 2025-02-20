@@ -33,10 +33,9 @@ public void task1B(){ // Task 1.B
 
 }
 
-public String task1C(String inputStr){ // Task 1.C
+public void task1C(String inputStr){ // Task 1.C
 
   println(inputStr);
-  return inputStr;
 
 }
 
