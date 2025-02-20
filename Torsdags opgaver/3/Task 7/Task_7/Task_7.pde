@@ -31,7 +31,7 @@ public void draw(){
 
 public void recursion(int n){
 
-  println(n);
+   println(n);
    n--;
    if (n > 0) {
      recursion(n);
