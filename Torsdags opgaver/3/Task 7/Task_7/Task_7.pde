@@ -15,7 +15,7 @@ public void setup(){
   background(50);
 
   // Method calling
-  recursion(2);
+  recursion(10);
 
 }
 
@@ -31,6 +31,10 @@ public void draw(){
 
 public void recursion(int n){
 
-  
+  println(n);
+   n--;
+   if (n > 0) {
+     recursion(n);
+   }
   
 } // recursion method end
