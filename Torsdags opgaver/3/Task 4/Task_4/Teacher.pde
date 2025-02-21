@@ -15,7 +15,15 @@ public class Teacher{
   public void changeName(String newName){
   
     println("Name before change " + name);
-    println("Name after change " + newName);
+    name = newName;
+    println("Name after change " + name);
+    
+    /*
+    
+    Somehow forgot to set name = newName. That's why this is changed after deadline.
+    Not sure how that happened but yea.. In case you're wondering.
+    
+    */
   
   }
 
