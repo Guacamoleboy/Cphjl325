@@ -51,6 +51,4 @@ public void drawChess(){
     
   } // For-loop 1 end
 
-  
- 
 } // drawChess method end
