@@ -33,7 +33,7 @@ public void draw(){
 
 public int getRandom(){
 
-  int randomInt = (int)random(arr.length); // Default random is float, so type-casting that to int.
-  return arr[randomInt];
+  int randomInt = (int)random(arr.length); // Default random is float, so type-casting that to int. This basically returns 1-5.
+  return arr[randomInt]; // This prints the value on the random spot from the number above.
 
 }
