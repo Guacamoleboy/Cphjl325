@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+import java.util.ArrayList; // Allows us to use ArrayList
 
-public class DrinksAndPrices {
+public class DrinkClient {
 
     public static void main(String[] args) {
 
@@ -12,8 +12,11 @@ public class DrinksAndPrices {
         myDrinks.add(new Drinks(25, "Faxe Kondi"));
 
         for (Drinks drink : myDrinks) {
-            System.out.println("Drink: " + drink.name + ", Price: " + drink.price);
+
+            drink.printNameAndPrice();
+            
         }
 
-    }
-}
+    } // Main Method End
+
+} // Class End
