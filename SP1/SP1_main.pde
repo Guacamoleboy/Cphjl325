@@ -47,10 +47,8 @@ public void setup(){
   // Fonts        
   font2 = createFont("Daydream.ttf", 15);   
   font = createFont("Wonderly.otf", 50);
-  fontOutline = createFont("Wonderly.otf", 50.3); // Casts a slight shadow
   quote = createFont("Butler_Bold.otf", 40);
   groupTextFont = createFont("Butler_Bold.otf", 25);
-  quoteOutline = createFont("Butler_Bold.otf", 40.1); // Casts a slight shadow
           
   // Display
   size(1000, 700);
@@ -68,13 +66,14 @@ public void draw(){
   
       if (startScreen){
           
-          textFont(fontOutline);
+          textFont(font);
           textAlign(CENTER, CENTER);
           fill(black);
-          text("Welcome to the group showcase" + "\n" + "Press a key to continue.." , 500, 350);
-          textFont(font);
+          text("Welcome to the group showcase" + "\n" + "Press a key to continue.." , 501, 351); // Adding 1 to x and y to make a "shadow"
           fill(whiteText);
           text("Welcome to the group showcase" + "\n" + "Press a key to continue.." , 500, 350);
+          
+          
           
       } 
   
@@ -89,11 +88,10 @@ public void draw(){
           rect(mapRectX, mapRectY, mapRectWidth, mapRectHeight);
           
           // Text above Groups
-          textFont(quoteOutline);
-          fill(black);
-          text("Nunca es tarde para aprender", width/2, mapRectY-50);
-          fill(whiteText);
           textFont(quote);
+          fill(black);
+          text("Nunca es tarde para aprender", (width/2)+1, (mapRectY-50)+1); // Adding 1 to x and y to create a "shadow"
+          fill(whiteText);
           text("Nunca es tarde para aprender", width/2, mapRectY-50);
           
           misc.centerLine(); // Center line spawn

@@ -1,14 +1,14 @@
-class Drinks {
+class Drinks { // Class
 
-    int price;
+    int price; // Attributes
     String name;
 
-    Drinks(int drinkPrice, String drinkName) {
+    Drinks(int price, String name) { // Constructor with parameter
 
-        price = drinkPrice;
-        name = drinkName;
+        this.price = price;
+        this.name = name;
         
-    }
+    } // Constructor end
 
     // Method to print the name and price of the drink
     public void printNameAndPrice(){

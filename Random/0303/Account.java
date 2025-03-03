@@ -1,9 +1,9 @@
 class Account{
 	
-	int balanace;
 	String owner;
+	int balance;
 
-	public Account(int balance, String owner){ // Constructor
+	public Account(String owner, int balance){ // Constructor
 
 		this.balance = balance;
 		this.owner = owner;

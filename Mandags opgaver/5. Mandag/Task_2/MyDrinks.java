@@ -19,9 +19,7 @@ public class MyDrinks {
             System.out.println(s);
 
         }
-        
-        
-       
+          
         
     } // Main Method End
 

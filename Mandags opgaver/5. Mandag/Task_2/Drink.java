@@ -3,10 +3,10 @@ class Drinks {
     int price;
     String name;
 
-    Drinks(int drinkPrice, String drinkName) {
+    Drinks(int price, String name) {
 
-        price = drinkPrice;
-        name = drinkName;
+        this.price = price;
+        this.name = name;
         
     }
 

@@ -15,6 +15,7 @@ class Bank{ // Class
 
 	public void createAccount(String owner, int balance){ // Owner og balance er fra (Accounts.java)
 
+		Account a = new Account(owner, balance);
 		this.accounts.add(a);
 
 		//accounts.add(new Account(owner, balance));
