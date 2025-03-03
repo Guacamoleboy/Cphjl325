@@ -23,8 +23,6 @@ public class MyDrinks
         }
         
         
-       
-        
     } // Main Method End
 
 } // Class End
