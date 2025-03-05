@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class GameMenu{ // Entity class
 
-
 	private ArrayList <String> actions; // Attribute
 
 	public GameMenu(ArrayList <String> actions){ // Constructor with ArrayList as parameter
