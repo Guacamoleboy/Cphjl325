@@ -31,10 +31,12 @@ class Team implements Comparable <Team> { // When using Comparable <t> you need 
 		teamMembers.add(nameToAdd);
 
 	}
-	
+
 	@Override
-    public int compareTo(Team otherTeam) { // Method to compare ranks. Needed for Comparable <t> (<Team> in my case).
-        return Integer.compare(this.teamRank, otherTeam.teamRank); 
-    }
+	public int compareTo(Team otherTeam) { // Method to compare ranks. Needed for Comparable <t> (<Team> in my case).
+
+		return Integer.compare(this.teamRank, otherTeam.teamRank);
+
+	}
 
 }
