@@ -58,7 +58,7 @@ public class Main{
 		teams.add(teamSix);
 
 		// Sorts from lowest to highest teamRank
-      	Collections.sort(teams);
+		Collections.sort(teams);
 
       	// For-loop to print the list
       	for (Team team : teams) {
