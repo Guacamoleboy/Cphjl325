@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Team implements Comparable <Team> {
+class Team implements Comparable <Team> { // When using Comparable <t> you need a compareTo() method. 
 
 	private String teamName; 
 	private int teamRank; 
@@ -31,8 +31,9 @@ class Team implements Comparable <Team> {
 		teamMembers.add(nameToAdd);
 
 	}
-
-    public int compareTo(Team otherTeam) { // Method to compare ranks
+	
+	@Override
+    public int compareTo(Team otherTeam) { // Method to compare ranks. Needed for Comparable <t> (<Team> in my case).
         return Integer.compare(this.teamRank, otherTeam.teamRank); 
     }
 

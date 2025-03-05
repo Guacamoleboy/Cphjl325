@@ -48,23 +48,24 @@ public class Main{
 		teamSix.addPlayer("Melon");
 
 		// Arraylist named teams which holds the instances
-        ArrayList <Team> teams = new ArrayList<Team>();
-        teams.add(teamOne);
-        teams.add(teamTwo);
-        teams.add(teamThree);
-        teams.add(teamFour);
-        teams.add(teamFive);
-        teams.add(teamSix);
 
-        // Sort teams from lowest to highest
-        Collections.sort(teams);
+		ArrayList <Team> teams = new ArrayList<Team>();
+		teams.add(teamOne);
+		teams.add(teamTwo);
+		teams.add(teamThree);
+		teams.add(teamFour);
+		teams.add(teamFive);
+		teams.add(teamSix);
 
-        // Print the sorted teams
-        for (Team team : teams) {
+		// Sorts from lowest to highest teamRank
+      	Collections.sort(teams);
 
-            System.out.println(team.toString());
-            
-        }
+      	// For-loop to print the list
+      	for (Team team : teams) {
+
+      		System.out.println(team.toString());
+
+      	}
 
 	}
 
