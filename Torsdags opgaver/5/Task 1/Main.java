@@ -6,6 +6,7 @@
 	Comments:
 
 	Could probably do some for-loops and arrays.
+	Could also move some of the stuff into methods.
 
 	(1) = Changed so the constructor sets the rank instead of a line of code per rank.
 	(2)	= Commented out the setRank method as it seems useless..
@@ -16,7 +17,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main{
-
 
 	public static void main(String[] args){
 
