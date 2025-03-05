@@ -5,7 +5,7 @@
 
 	Comments:
 
-	N/A
+	I didn't add any catch to the things as the Task didn't ask for it.
 
 */
 
@@ -28,7 +28,7 @@ public class Main{
 	int ageLeft = ageTillRetirement - age;
 
 	// Output
-	System.out.println("Hello, " + name + ". You are " + age + " years old.. You have " + ageLeft + " left untill retirement.");
+	System.out.println("Hello, " + name + ". You are " + age + " years old.. You have " + ageLeft + " years left untill retirement.");
 
 	}
 
