@@ -60,12 +60,12 @@ public class Main{
 		// Sorts from lowest to highest teamRank
 		Collections.sort(teams);
 
-      	// For-loop to print the list
-      	for (Team team : teams) {
+		// For-loop to print the list
+		for(Team team : teams) {
 
-      		System.out.println(team.toString());
+			System.out.println(team.toString());
 
-      	}
+		}
 
 	}
 
