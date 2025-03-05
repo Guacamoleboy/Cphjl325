@@ -14,9 +14,9 @@ class Team implements Comparable <Team> { // When using Comparable <t> you need 
 
 	}
 
-	/*public void setRank(int teamRank){ (2)
+	/*public int setRank(int teamRank){ (2)
 
-		this.teamRank = teamRank;
+		return this.teamRank = teamRank;
 
 	}*/
 

@@ -8,6 +8,7 @@
 	Could probably do some for-loops and arrays.
 
 	(1) = Changed so the constructor sets the rank instead of a line of code per rank.
+	(2)	= Commented out the setRank method as it seems useless..
 
 */
 
