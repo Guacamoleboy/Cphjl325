@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+' - means private and + means public
+
+class Person {
+
+- int age
+- String name
+
++int getAge()
++String getName()
++void setAge(int age)
++void setName(String name)
++String toString()
+
+}
+
+@enduml
