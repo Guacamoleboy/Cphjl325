@@ -6,6 +6,8 @@ public class Main { // Client class
 
     public static void main(String[] args) { // Main class
 
+        //readPresidents();
+        teamsMethod();
 
 
     } // Main class end

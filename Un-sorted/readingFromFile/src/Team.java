@@ -23,4 +23,12 @@ public class Team { // Entity class
 
     } // toString end
 
+    // ___________________________________________________________________________
+
+    public void setScore(int points){
+
+        this.score += point;
+
+    }
+
 } // Entity class end
