@@ -1,8 +1,13 @@
 import java.io.File; // java.io.*
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main { // Client class
+
+    static ArrayList <Team> teams = new ArrayList<Team>(); // Global scope
 
     public static void main(String[] args) { // Main class
 
@@ -52,11 +57,12 @@ public class Main { // Client class
     public static void teamsMethod(){
 
         File file = new File("data/teams.csv"); // data/ is just our folder
+        String header = ""; // Has to have = "" or it won't be initialized
 
         try {
 
             Scanner scan = new Scanner(file);
-            scan.nextLine(); // Skips header
+            header = scan.nextLine(); // Skips header
 
             while(scan.hasNextLine()){
 
@@ -71,7 +77,8 @@ public class Main { // Client class
 
                 // Creates and prints our values
                 Team t = new Team(groupName, groupID, groupScore);
-                System.out.println(t); // Can use t.toString() too.
+                // System.out.println(t); ||| print without ArrayList. Can also use t.toString()
+                teams.add(t); // ArrayList add
 
             } // while end
 
@@ -81,6 +88,48 @@ public class Main { // Client class
 
         } // Try-catch end
 
+        System.out.println("\nBefore changes:\n");
+        for(Team t : teams){ // Print with ArrayList
+            System.out.println(t);
+        }
+
+        // Sets score
+        teams.get(2).setScore(20);
+
+        System.out.println("\nAfter changes:\n");
+        for(Team t : teams){ // Print with ArrayList
+            System.out.println(t);
+        }
+
+        // Saves data
+        saveData(header);
+
     } // teamsMethod end
+
+    // ___________________________________________________________________________
+
+    public static void saveData(String header){ // Saves our data in our .csv file
+
+        try {
+
+            FileWriter writer = new FileWriter("data/teams.csv");
+
+            writer.write(header + "\n"); // Header
+
+            for (Team t : teams){
+
+                writer.write(t.toCSV() + "\n"); // prints correct syntax in CSV format
+
+            }
+
+            writer.close();
+
+        } catch (IOException e){
+
+            System.out.println("Error");
+
+        }
+
+    } // saveData method end
 
 } // Client class end

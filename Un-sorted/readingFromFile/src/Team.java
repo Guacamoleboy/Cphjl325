@@ -27,7 +27,15 @@ public class Team { // Entity class
 
     public void setScore(int points){
 
-        this.score += point;
+        this.score += points;
+
+    }
+
+    // ___________________________________________________________________________
+
+    public String toCSV(){
+
+        return name + ", " + groupID + ", " + score;
 
     }
 
