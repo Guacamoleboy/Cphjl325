@@ -1,7 +1,4 @@
-import java.io.File; // java.io.*
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*; // Toggles the .io lib instead of each individual..
 import java.util.Scanner;
 import java.util.ArrayList;
 
