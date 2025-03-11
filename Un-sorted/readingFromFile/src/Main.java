@@ -15,20 +15,22 @@ public class Main { // Client class
 
             while(scan.hasNextLine()){
 
+                // Splits our .cvs into an array
                 String line = scan.nextLine();
                 String[] values = line.split(",");
 
-                // Stores and prints our values
+                // Stores our values
                 String groupName = values[0];
                 int groupID = Integer.parseInt(values[1].trim()); // trim() is to remove the spacing "   " else it'll fail
                 int groupScore = Integer.parseInt(values[2].trim());
 
+                // Creates and prints our values
                 Team t = new Team(groupName, groupID, groupScore);
                 System.out.println(t); // Can use t.toString() too.
 
             } // while end
 
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) { // Always try to catch the specific exception!
 
             System.out.println("File not found..");
 
