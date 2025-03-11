@@ -1,4 +1,4 @@
-import java.io.File;
+import java.io.File; // java.io.*
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Main { // Client class
 
     public static void main(String[] args) { // Main class
 
-        File file = new File("data/teams.csv");
+        File file = new File("data/teams.csv"); // data/ is just our folder
 
         try {
 
