@@ -14,7 +14,6 @@ public class Main { // Client class
         //readPresidents();
         teamsMethod();
 
-
     } // Main class end
 
     // ___________________________________________________________________________
@@ -95,13 +94,15 @@ public class Main { // Client class
 
         // Sets score
         teams.get(2).setScore(20);
+        teams.get(1).setScore(5);
+        teams.get(0).setScore(-1);
 
         System.out.println("\nAfter changes:\n");
         for(Team t : teams){ // Print with ArrayList
             System.out.println(t);
         }
 
-        // Saves data
+        // Saves data without header
         saveData(header);
 
     } // teamsMethod end
