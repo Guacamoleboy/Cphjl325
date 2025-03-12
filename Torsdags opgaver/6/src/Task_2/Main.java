@@ -6,14 +6,12 @@
     Comments:
     N/A
 
-
 */
 
-// Package
+// Packages
 package Task_2;
 
 // Util
-
 
 public class Main { // Client class
 
@@ -21,7 +19,8 @@ public class Main { // Client class
 
     public static void main(String[] args) {
 
-        System.out.println("Hello, World!");
+        Cafe cafe = new Cafe();
+        cafe.loadMenuData(); // Assigns from .csv file to an [] array and prints in for-each loop.
 
     } // Main end
 
