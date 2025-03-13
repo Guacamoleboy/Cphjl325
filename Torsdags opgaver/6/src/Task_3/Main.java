@@ -52,8 +52,9 @@ public class Main { // Client class
     public static int countLampsInBuilding(Building building){
 
         int totalNumberOfLamps = 0; // Needs 0 or it'll fail
+        ArrayList <Room> rooms = building.getRooms();
 
-        for (Room room : building.getRooms()){
+        for (Room room : rooms){
             totalNumberOfLamps += room.getNumberOfLamps();
         }
 
@@ -66,8 +67,9 @@ public class Main { // Client class
     public static int countWindowsInBuilding(Building building){
 
         int totalNumberOfWindows = 0; // Needs 0 or it'll fail
+        ArrayList <Room> rooms = building.getRooms();
 
-        for (Room room : building.getRooms()){
+        for (Room room : rooms){
             totalNumberOfWindows += room.getNumberOfWindows();
         }
 
