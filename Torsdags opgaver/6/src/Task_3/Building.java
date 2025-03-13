@@ -38,7 +38,4 @@ public class Building { // Entity class
         this.numberOfFloors = n;
     }
 
-
-
-
 } // Entity class end
