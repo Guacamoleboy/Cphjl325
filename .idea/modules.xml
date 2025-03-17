@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/1103/1103.iml" filepath="$PROJECT_DIR$/Un-sorted/1103/1103.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Torsdags opgaver/5/5.iml" filepath="$PROJECT_DIR$/Torsdags opgaver/5/5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mandags opgaver/5. Mandag/5. Mandag.iml" filepath="$PROJECT_DIR$/Mandags opgaver/5. Mandag/5. Mandag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Torsdags opgaver/6/6.iml" filepath="$PROJECT_DIR$/Torsdags opgaver/6/6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mandags opgaver/6. Mandag/6. Mandag.iml" filepath="$PROJECT_DIR$/Mandags opgaver/6. Mandag/6. Mandag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mandags opgaver/7. Mandag/7. Mandag.iml" filepath="$PROJECT_DIR$/Mandags opgaver/7. Mandag/7. Mandag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cphjl325.iml" filepath="$PROJECT_DIR$/.idea/Cphjl325.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/GUI/GUI.iml" filepath="$PROJECT_DIR$/Un-sorted/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/GUI1303/GUI1303.iml" filepath="$PROJECT_DIR$/Un-sorted/GUI1303/GUI1303.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/Un-sorted.iml" filepath="$PROJECT_DIR$/Un-sorted/Un-sorted.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/readingFromFile/readingFromFile.iml" filepath="$PROJECT_DIR$/Un-sorted/readingFromFile/readingFromFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Un-sorted/untitled/untitled.iml" filepath="$PROJECT_DIR$/Un-sorted/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
