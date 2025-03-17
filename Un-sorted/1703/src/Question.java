@@ -1,7 +1,7 @@
 import java.lang.*;
 import java.util.*;
 
-public class Question { // Super super class
+public class Question { // Super class
 
     protected String questionText;
     protected Random r1 = new Random();
@@ -20,28 +20,35 @@ public class Question { // Super super class
 
     }
 
-    protected void askQuestion() { // super super constructor
+    protected void askQuestion() { // Super constructor
 
-        // Prints our question to the user
-        System.out.println("What is the correct answer?");
-        userAnswer = s.nextInt();
+        // Not used. We override it under each own class.
+        System.out.println();
 
     }
 
     private void evaluate(){
 
-    // Checks if our userAnswer == correctAnswer. If not -> do THIS
-    if(userAnswer == correctAnswer){ // if-else statement
+        System.out.println("What is the correct answer?");
+        userAnswer = s.nextInt();
 
-        System.out.println("Correct");
+        // Checks if our userAnswer == correctAnswer. If not -> do THIS
+        if(userAnswer == correctAnswer){ // if-else statement
 
-    } else {
+            System.out.println("Correct (nerd)");
 
-        System.out.println("Wrong.. You suck.");
+        } else {
 
-    } // else end
+            System.out.println("Wrong.. Faking noob.");
+
+        } // else end
 
     }
 
+    public void runQuestion(){
+        askQuestion();
+        evaluate();
+    }
 
-} // Super super class end
+
+} // Super class end

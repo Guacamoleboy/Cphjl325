@@ -6,22 +6,16 @@ public class Main { // Client class
 
         ArrayList <Question> questions = new ArrayList <Question> ();
 
-        Question q1 = new SubstractionQuestion("Hvad er ");
-        Question q2 = new AdditionQuestion("Hvad er ");
-        Question q3 = new MultiplicationQuestion("Hvad er ");
-
-        questions.add(q1);
-        questions.add(q2);
-        questions.add(q3);
+        questions.add(new SubstractionQuestion("What is "));
+        questions.add(new AdditionQuestion("What is "));
+        questions.add(new MultiplicationQuestion("What is "));
 
         for(Question q : questions){
 
-            System.out.println(q);
+            q.runQuestion();
+            System.out.println(); // Empty line
 
         }
-
-
-
 
     } // Main end
 
