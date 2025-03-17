@@ -1,5 +1,9 @@
 public class AdditionQuestion extends Question{
 
+    // Attributes
+
+    // ________________________________________________________
+
     public AdditionQuestion(String questionText) {
 
         super(questionText);
@@ -14,4 +18,4 @@ public class AdditionQuestion extends Question{
 
     }
 
-}
+} // Sub class end

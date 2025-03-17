@@ -1,11 +1,17 @@
 public class MultiplicationQuestion extends Question {
 
+    // Attributes
+
+    // ________________________________________________________
+
     public MultiplicationQuestion(String questionText) {
 
         super(questionText);
         correctAnswer = rnd_nr1 * rnd_nr2;
 
     }
+
+    // ________________________________________________________
 
     @Override
     protected void askQuestion() {
@@ -14,4 +20,4 @@ public class MultiplicationQuestion extends Question {
 
     }
 
-}
+} // Sub class end
