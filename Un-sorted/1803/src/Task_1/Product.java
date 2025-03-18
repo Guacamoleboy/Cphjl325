@@ -1,3 +1,5 @@
+package Task_1;
+
 public class Product { // Entity class || Super class
 
     // Attributes
@@ -17,7 +19,7 @@ public class Product { // Entity class || Super class
 
     public String toString(){
 
-        return "Product name: " + this.name + " | Product price: " + this.price + ".";
+        return "Task_1.Product name: " + this.name + " | Task_1.Product price: " + this.price + ".";
 
     }
 

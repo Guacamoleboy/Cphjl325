@@ -1,3 +1,5 @@
+package Task_1;
+
 import java.time.LocalDate;
 
 public class Perishable extends Product { // Subclass
@@ -21,12 +23,12 @@ public class Perishable extends Product { // Subclass
     public String toString(){
 
         String s = super.toString(); // Calls our super toString method first and stores in a String
-        return s + ".. Product expires: " + this.bestBefore + ".";
+        return s + ".. Task_1.Product expires: " + this.bestBefore + ".";
 
         /*
 
         Could do it like this aswell..
-        return "Product name: " + this.name + " | Product price: " + this.price + " | Product expires: " + this.bestBefore + ".";
+        return "Task_1.Product name: " + this.name + " | Task_1.Product price: " + this.price + " | Task_1.Product expires: " + this.bestBefore + ".";
 
         */
     }
