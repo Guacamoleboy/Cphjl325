@@ -42,6 +42,6 @@ public class Main { // Client class
 
         } // Downcasting our Perishable in order to print out the true/false method
 
-    } // Task_1.Main end
+    } // Main end
 
 } // Client class end
