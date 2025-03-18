@@ -14,6 +14,10 @@ import java.util.ArrayList;
 
 public class Main{ // Client class
 
+    // Global attributes
+
+    // _________________________________________________
+
     public static void main(String[] args){
 
         // ArrayLists
@@ -52,7 +56,8 @@ public class Main{ // Client class
 
                     System.out.println(person.getName() + " can't teach this..");
 
-                }
+                } // if-else if end
+
             } // if-else end
 
         } // for-each loop end

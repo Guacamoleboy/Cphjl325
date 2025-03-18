@@ -8,6 +8,8 @@ public class Student extends Person{ // Subclass | Non-abstract as we @Override 
     protected ArrayList<String> passedCourses;
     protected ArrayList<String> currentCourse;
 
+    // _________________________________________________
+
     public Student(String name, ArrayList<String> passedCourses, ArrayList<String> currentCourse){
 
         super(name);

@@ -9,6 +9,8 @@ public class Teacher extends Person { // Subclass | Non-abstract as we @Override
     protected ArrayList<String> canTeach;
     protected ArrayList<String> currentCourses;
 
+    // _________________________________________________
+
     public Teacher(String name, ArrayList<String> canTeach, ArrayList<String> currentCourses){
 
         super(name);
