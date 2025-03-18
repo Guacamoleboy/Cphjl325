@@ -19,7 +19,7 @@ public class Product { // Entity class || Super class
 
     public String toString(){
 
-        return "Task_1.Product name: " + this.name + " | Task_1.Product price: " + this.price + ".";
+        return "Product name: " + this.name + " | Product price: " + this.price + ".";
 
     }
 
