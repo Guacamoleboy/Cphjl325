@@ -1,7 +1,7 @@
 public class PrintedBook extends Title{ // Subclass
 
     // Attributes
-    private final int pages;
+    private int pages;
 
     // ______________________CONSTRUCTOR_______________________
 
