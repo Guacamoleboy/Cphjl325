@@ -6,7 +6,7 @@ public abstract class Title { // Superclass
     protected int copies;
 
     // Constant values. Not adding a switch-case as calculateLiteratureType. It seems dumb.
-    protected double rate = 0.067574;
+    protected final double rate = 0.067574;
     protected final int billedbog = 3;
     protected final int tegneserie = 3;
     protected final int lyrik = 6;
