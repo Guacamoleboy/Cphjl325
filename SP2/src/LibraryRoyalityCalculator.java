@@ -1,3 +1,21 @@
+/*
+
+    Author: CPHJL325 // Jonas Meinert Larsen
+    SP2
+    Version 1.0
+
+    Comments:
+
+    1) Changed int literatureTypePoints to String literatureType and made it protected.
+       It makes no sense having it as int. Private would require that method which was in the Plumel.
+       I feel like this makes more sense. Simply to calculate points in the subclass and load from there.
+
+    2) Instead of making the convertLiteratureType() method I've simply added the values as attributes
+       to title. They are static and will not change. For that reason there's no reason NOT to make them
+       an attribute. This also allows me to calculate points under each subclass.
+
+*/
+
 public class LibraryRoyalityCalculator { // Client class
 
     // Global attriutes

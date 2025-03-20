@@ -17,6 +17,7 @@ public class PrintedBook extends Title{ // Subclass
     @Override
     protected double calculatePoints(){
 
+        // Our final double value depending on the input
         double value;
 
         switch (literatureType) {
@@ -37,6 +38,7 @@ public class PrintedBook extends Title{ // Subclass
                 value = fagbog;
         }
 
+        // Using our value to calculate points
         return (pages) * value * copies;
 
     }
@@ -45,6 +47,12 @@ public class PrintedBook extends Title{ // Subclass
 
     public int getPages(){
         return this.pages;
+    }
+
+    // ________________________SETTER__________________________
+
+    public void setPages(int pages){
+        this.pages = pages;
     }
 
 } // Subclass end

@@ -15,6 +15,7 @@ public class AudioBook extends Title { // Subclass
     @Override
     protected double calculatePoints(){
 
+        // Final value depending on the input
         double value;
 
         switch (literatureType) {
@@ -35,6 +36,7 @@ public class AudioBook extends Title { // Subclass
                 value = fagbog;
         } // Switch-case end
 
+        // Using our value to calculate points
         return (durationInMinutes / 2) * value * copies;
 
     } // Method end
