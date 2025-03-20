@@ -1,4 +1,4 @@
-/*public abstract class PhysicalBook extends Title {
+public abstract class PhysicalBook extends Title {
 
     // Attributes
     protected int copies;
@@ -8,6 +8,6 @@
         this.copies = copies;
     }
 
-    protected abstract double calculatePoints();
+    public abstract double calculatePoints(); // Allows next (Subclass) to have their own calculations
 
-}*/
+}

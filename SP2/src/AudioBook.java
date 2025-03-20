@@ -1,4 +1,4 @@
-public class AudioBook extends Title { // Subclass
+public class AudioBook extends PhysicalBook { // Subclass
 
     // Attributes
     private int durationInMinutes;
@@ -15,29 +15,10 @@ public class AudioBook extends Title { // Subclass
     @Override
     public double calculatePoints(){
 
-        // Final value depending on the input
-        double value;
-
-        switch (literatureType) {
-
-            case "billedbog":
-                value = billedbog;
-                break;
-            case "tegneserie":
-                value = tegneserie;
-                break;
-            case "lyrik":
-                value = lyrik;
-                break;
-            case "skønlit":
-                value = skønlit;
-                break;
-            default:
-                value = fagbog;
-        } // Switch-case end
+        // Moved switch-case to Title as its own method.
 
         // Using our value to calculate points
-        return (durationInMinutes / 2) * value * copies;
+        return (durationInMinutes / 2) * findCorrectValue() * copies;
 
     } // Method end
 

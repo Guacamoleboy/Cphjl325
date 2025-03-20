@@ -1,5 +1,5 @@
-/*public interface IAudioBook { // Interface
+public interface IAudioBook { // Interface
 
-    // Plumel diagram makes no sense.
+    //double calculatePoints();
 
-}*/
+}

@@ -1,4 +1,4 @@
-public class PrintedBook extends Title{ // Subclass
+public class PrintedBook extends PhysicalBook{ // Subclass
 
     // Attributes
     private int pages;
@@ -17,29 +17,10 @@ public class PrintedBook extends Title{ // Subclass
     @Override
     public double calculatePoints(){
 
-        // Our final double value depending on the input
-        double value;
-
-        switch (literatureType) {
-
-            case "billedbog":
-                value = billedbog;
-                break;
-            case "tegneserie":
-                value = tegneserie;
-                break;
-            case "lyrik":
-                value = lyrik;
-                break;
-            case "skønlit":
-                value = skønlit;
-                break;
-            default:
-                value = fagbog;
-        }
+        // Moved switch-case to Title as its own method.
 
         // Using our value to calculate points
-        return (pages) * value * copies;
+        return (pages) * findCorrectValue() * copies;
 
     }
 

@@ -1,43 +1,31 @@
-/*public class EAudioBook extends NetBook implements IAudioBook{
+public class EAudioBook extends NetBook{
 
     // Attributes
     private int durationInMinutes;
 
-    public EAudioBook(String title, String literatureType, int availabiliy, int reach, int use, int durationInMinutes){
+    public EAudioBook(String title, String literatureType, int availabiliy, int reach, int use, int characters, int durationInMinutes, boolean illustrated){
 
-        super(title, literatureType, availabiliy, reach, use);
+        super(title, literatureType, availabiliy, reach, use, characters, illustrated);
         this.durationInMinutes = durationInMinutes;
 
+    }
+
+    public double getPseudoPagesEAudioBook(){
+        return durationInMinutes / 2;
     }
 
     @Override
     public double calculatePoints(){
 
-        // Final value depending on the input
-        double value;
+        double d = getPseudoPagesEAudioBook() * findCorrectValue() * ((availability * 5) + (reach * 0.5) + use);
 
-        switch (literatureType) {
+        if(illustrated){
+            d *= 1.1; // Adds 10% if illustrated
+        }
 
-            case "billedbog":
-                value = billedbog;
-                break;
-            case "tegneserie":
-                value = tegneserie;
-                break;
-            case "lyrik":
-                value = lyrik;
-                break;
-            case "skønlit":
-                value = skønlit;
-                break;
-            default:
-                value = fagbog;
-        } // Switch-case end
-
-        // Using our value to calculate points
-        return (durationInMinutes / 2) * value * pages;
+        return  d;
 
     }
 
 
-}*/
+}

@@ -2,25 +2,16 @@ public abstract class Title { // Superclass
 
     // Attributes
     private String title;
-    protected String literatureType; // Changed from private to protected
-    protected int copies;
+    private String literatureType;
 
-    // Constant values. Not adding a switch-case as calculateLiteratureType. It seems dumb.
+    // Constant
     protected final double rate = 0.067574;
-    protected final int billedbog = 3;
-    protected final int tegneserie = 3;
-    protected final int lyrik = 6;
-    protected final double skønlit = 1.7;
-    protected final int fagbog = 1;
 
     // ______________________CONSTRUCTOR_______________________
 
-    public Title(String title, String literatureType, int copies){
-
+    public Title(String title, String literatureType){
         this.title = title;
         this.literatureType = literatureType;
-        this.copies = copies;
-
     }
 
     // ________________________________________________________
@@ -43,7 +34,34 @@ public abstract class Title { // Superclass
 
     // ________________________________________________________
 
-    protected abstract double calculatePoints(); // @Override in subclass for each unique calculatePoints();
+    public abstract double calculatePoints(); // @Override in subclass for each unique calculatePoints();
 
+    // ________________________________________________________
+
+    public double findCorrectValue(){
+        // Our final double value depending on the input
+        double value;
+
+        switch (literatureType) {
+
+            case "billedbog":
+                value = 3;
+                break;
+            case "tegneserie":
+                value = 3;
+                break;
+            case "lyrik":
+                value = 6;
+                break;
+            case "skønlit":
+                value = 1.7;
+                break;
+            default:
+                value = 1;
+        }
+
+        return value;
+
+    }
 
 } // Superclass end

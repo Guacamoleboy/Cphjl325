@@ -1,30 +1,28 @@
-/*public class NetBook extends Title {
+public abstract class NetBook extends Title {
 
     protected int availability;
     protected int reach;
     protected int use;
+    protected int characters;
+    protected boolean illustrated;
 
-    public NetBook(String title, String literatureType, int availability, int reach, int use){
+    public NetBook(String title, String literatureType, int availability, int reach, int use, int characters, boolean illustrated){
         super(title, literatureType);
         this.availability = availability;
         this.reach = reach;
         this.use = use;
+        this.characters = characters;
+        this.illustrated = illustrated;
     }
 
-    protected double getPseudoCopies(){
-        return 2.0;
+    protected double getPseudoPagesEBook(){
+        return (characters/1800) + 20;
     }
 
     private int getUseFactor(){
-        return 1;
+        return this.use;
     }
 
-    @Override
-    public double calculatePoints(){
+    public abstract double calculatePoints(); // Allows next (Subclass) to have their own calculations
 
-        // Placeholder
-        double n = 1.0;
-        return n;
-    }
-
-}*/
+}
