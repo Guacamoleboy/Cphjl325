@@ -14,6 +14,9 @@
        to title. They are static and will not change. For that reason there's no reason NOT to make them
        an attribute. This also allows me to calculate points under each subclass.
 
+    3) I tried making the hard mode of the Plumel Diagram but it makes no sense (the diagram) + text.
+
+
 */
 
 public class LibraryRoyalityCalculator { // Client class
