@@ -3,6 +3,8 @@ public class EAudioBook extends NetBook{
     // Attributes
     private int durationInMinutes;
 
+    // ________________________________________________________
+
     public EAudioBook(String title, String literatureType, int availabiliy, int reach, int use, int characters, int durationInMinutes, boolean illustrated){
 
         super(title, literatureType, availabiliy, reach, use, characters, illustrated);
@@ -10,9 +12,13 @@ public class EAudioBook extends NetBook{
 
     }
 
+    // ________________________________________________________
+
     public double getPseudoPagesEAudioBook(){
         return durationInMinutes / 2;
     }
+
+    // ________________________________________________________
 
     @Override
     public double calculatePoints(){

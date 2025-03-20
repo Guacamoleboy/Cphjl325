@@ -1,8 +1,14 @@
 public class EBook extends NetBook {
 
+    // Attributes
+
+    // ________________________________________________________
+
     public EBook(String title, String literatureType, int availability, int reach, int use, int characters, boolean illustrated){
         super(title, literatureType, availability, reach, use, characters, illustrated);
     }
+
+    // ________________________________________________________
 
     @Override
     public double calculatePoints(){
