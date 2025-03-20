@@ -15,7 +15,7 @@ public class PrintedBook extends Title{ // Subclass
     // ________________________________________________________
 
     @Override
-    protected double calculatePoints(){
+    public double calculatePoints(){
 
         // Our final double value depending on the input
         double value;

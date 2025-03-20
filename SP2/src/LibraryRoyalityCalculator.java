@@ -29,8 +29,8 @@ public class LibraryRoyalityCalculator { // Client class
 
         // Adds titles
         AudioBook audioBookOne = new AudioBook("Livet som narkoman", "skønlit", 140, 192); // debug
-        PrintedBook paperBookOne = new PrintedBook("Se min hule", "skønlit", 140, 166); // debug
         AudioBook audioBookTwo = new AudioBook("Java er livet", "fagbog", 600, 520);
+        PrintedBook paperBookOne = new PrintedBook("Se min hule", "skønlit", 140, 166); // debug
         PrintedBook paperBookTwo = new PrintedBook("HTML kan noget..", "fagbog", 700, 400);
 
         // Add to our authors..

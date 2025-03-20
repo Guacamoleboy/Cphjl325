@@ -49,6 +49,7 @@ public class Author { // Entity class
 
     // ________________________________________________________
 
+    // Used as debug
     public String toString(){
         return "Author: " + name + " | Titles: " + titles.size();
     }

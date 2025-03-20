@@ -1,16 +1,14 @@
-public class AudioBook extends Title { // Subclass
+/*public class EAudioBook extends NetBook implements IAudioBook{
 
     // Attributes
     private int durationInMinutes;
 
-    // ______________________CONSTRUCTOR_______________________
+    public EAudioBook(String title, String literatureType, int availabiliy, int reach, int use, int durationInMinutes){
 
-    public AudioBook(String title, String literatureType, int copies, int durationInMinutes){
-        super(title, literatureType, copies);
+        super(title, literatureType, availabiliy, reach, use);
         this.durationInMinutes = durationInMinutes;
-    }
 
-    // ________________________________________________________
+    }
 
     @Override
     public double calculatePoints(){
@@ -37,8 +35,9 @@ public class AudioBook extends Title { // Subclass
         } // Switch-case end
 
         // Using our value to calculate points
-        return (durationInMinutes / 2) * value * copies;
+        return (durationInMinutes / 2) * value * pages;
 
-    } // Method end
+    }
 
-} // Subclass end
+
+}*/
